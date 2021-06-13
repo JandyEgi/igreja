@@ -1,6 +1,6 @@
 <?php
 
-namespace igrejatool\entities;
+namespace Church\entities;
 
 
 class events extends Models{

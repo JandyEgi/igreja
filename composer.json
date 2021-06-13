@@ -1,0 +1,19 @@
+{
+    "name": "paulo/church",
+    "description": "site para igreja",
+    "type": "project",
+    "license": "JANDYEGI",
+    "autoload": {
+        "psr-4": {
+            "Church\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Paulo Lopes Estevão",
+            "email": "pl1745240@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

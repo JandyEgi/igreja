@@ -1,5 +1,5 @@
 <?php
-namespace igrejatool\conexao;
+namespace Church\conexao;
 
 use PDO;
 

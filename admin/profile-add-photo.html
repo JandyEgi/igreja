@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html lang="pt-AO">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Walalétec & JandyEgi.  Desenvolvido Por Herlander Bento">
+
+  <title>JandyEgi - Prestação de serviços.</title>
+
+  <link rel="shortcut icon" href="../../../res/site/icon/JandyEgi/favicon.png" type="image/x-icon">
+
+  <!-- Bootstrap  CSS -->
+  <link rel="stylesheet" href="../../../res/admin/library-HCB/Bootstrap v4.4.1/css/bootstrap.min.css">
+
+  <!-- Simple-sidebar -->
+  <link rel="stylesheet" href="../../../res/admin/library-HCB/style/sidebar.css" >
+
+  <!-- Style  CSS -->
+  <link rel="stylesheet" href="../../../res/admin/library-HCB/style/style.css">
+
+  <!-- Font-awesome  CSS -->
+  <link rel="stylesheet" href="../../../res/admin/library-HCB/font-awesome/css/font-awesome.min.css">
+
+  <!-- Animate CSS -->
+  <!--link rel="stylesheet" href="../../res/admin/library-HCB/animate/animate.min.css"-->
+
+  <!-- MDB CSS -->
+  <link rel="stylesheet" href="../../../res/admin/library-HCB/mdb/css/mdb.min.css">
+
+  <link rel="stylesheet" href="../../../res/admin/library-HCB/adminHCB/admin-files.css">
+
+   <!--
+    *
+    * Equipa  : Walalétec - Soluções Tecnológicas
+    * Membros : António Gabriel, Aziel António, Filipe Gomes, Herlander Bento, Kelvín Domingos, Neiri Miúdo,  Paulo Estevão.
+    * Desenvolvido por : Herlander Bento.
+    * Data: 17/12/2019.
+    * Nota: III João 01:11
+    * " Amado, não siga o mal, mas o bem. Quem faz o bem é de Deus;
+    *   mas quem faz o mal não tem visto Deus  ".
+    *
+  -->
+
+
+</head>
+
+<body>
+  
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <aside class="bg-white border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">
+        <a href="../../../2019adminJE">
+          <img style="margin-left: -43px;" src="../../../res/site/icon/JandyEgi/logo_50x50.png" alt="">
+          <span class="logo-text">JandyEgi</span>
+        </a>
+      </div>
+
+      <div class="sidebar-user d-flex border-top border-bottom mx-2">
+        <div class="photo">
+          <img src='../../../res/site/images/profile/{function="getUserPhoto()"}' alt="" srcset="">
+        </div>
+        <div class="description">
+          <span class="user">{function="utf8_encode(getUserName())"}</span>
+          <span class="function">{function="getUserFunction()"}</span>
+        </div>
+      </div>
+
+      <ul class="list-group mt-3 list-group-flush">
+
+        <div class="group-dasboard">
+
+          <li class="list-group-item dashboard">
+
+            <a href="../../../2019adminJE" class="active">
+              <i class="fa fa-dashboard mr-1"></i>
+              Dashboard
+            </a>
+  
+          </li>
+
+        </div>
+
+        <li class="list-group-item">
+          <a  href="#layoutSubmenu" data-toggle="collapse">
+            <i class="fa fa-angle-down mr-2"></i>
+            <i class="fa fa-users mr-1"></i>
+            Usuários
+          </a>
+
+          <ul class="collapse list-unstyled" data-parent="#sidebar-wrapper" id="layoutSubmenu">
+            <li>
+              <a href="../../users/create"><i class="fa  fa-ellipsis-h "></i><span>Cadastrar Usuários</span></a>
+            </li>
+            <li>
+              <a href="../../users"><i class="fa  fa-ellipsis-h "></i><span>Lista de Usuários</span></a>
+            </li>
+          </ul>
+
+        </li>
+
+        <li class="list-group-item ">
+          <a href="#clientsSubmenu" data-toggle="collapse">
+            <i class="fa fa-angle-down mr-2"></i>
+            <i class="fa fa-users mr-1"></i>
+            Clientes
+          </a>
+
+          <ul class="collapse list-unstyled" data-parent="#sidebar-wrapper" id="clientsSubmenu">
+            <li>
+              <a href="../../clients/create"><i class="fa  fa-ellipsis-h "></i><span>Cadastrar</span></a>
+            </li>
+            <li>
+                <a href="../../clients"><i class="fa  fa-ellipsis-h "></i><span>Lista de Clientes</span></a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="list-group-item">
+          <a href="#elementsSubmenu" data-toggle="collapse">
+            <i class="fa fa-angle-down mr-2"></i>
+            <i class="fa fa-camera-retro mr-1"></i>
+            Portfólios
+          </a>
+
+          <ul class="collapse list-unstyled" data-parent="#sidebar-wrapper" id="elementsSubmenu">
+            <li>
+              <a href="../../portfolios/create"><i class="fa  fa-ellipsis-h "></i><span>Cadastrar</span></a>
+            </li>
+            <li>
+                <a href="../../portfolios"><i class="fa  fa-ellipsis-h "></i><span>Lista de Portfólios</span></a>
+            </li>
+          </ul>
+
+        </li>
+
+        <li class="list-group-item">
+          <a href="#categoryPortfolioSubmenu" data-toggle="collapse">
+            <i class="fa fa-angle-down mr-2"></i>
+            <i class="fa fa fa-sitemap mr-1"></i>
+            Categ. Portfólios
+          </a>
+
+          <ul class="collapse list-unstyled" data-parent="#sidebar-wrapper" id="categoryPortfolioSubmenu">
+            <li>
+              <a href="../../category-portfolios/create"><i class="fa  fa-ellipsis-h "></i><span>Cadastrar Categorias</span></a>
+            </li>
+            <li>
+                <a href="../../category-portfolios"><i class="fa  fa-ellipsis-h "></i><span>Lista de Categorias</span></a>
+            </li>
+
+          </ul>
+
+        </li>
+        <li class="list-group-item">
+          <a href="#formSubmenu" data-toggle="collapse">
+            <i class="fa fa-angle-down mr-2"></i>
+            <i class="fa fa-edit mr-1"></i>
+            Posts
+          </a>
+
+          <ul class="collapse list-unstyled" data-parent="#sidebar-wrapper" id="formSubmenu">
+            <li>
+              <a href="../../posts/create"><i class="fa  fa-ellipsis-h "></i><span>Cadastrar Posts</span></a>
+            </li>
+            <li>
+                <a href="../../posts"><i class="fa  fa-ellipsis-h "></i><span>Lista de Posts</span></a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="list-group-item">
+          <a href="#categoryPostsSubmenu" data-toggle="collapse">
+            <i class="fa fa-angle-down mr-2"></i>
+            <i class="fa fa fa-sitemap mr-1"></i>
+            Categ. Posts
+          </a>
+
+          <ul class="collapse list-unstyled" data-parent="#sidebar-wrapper" id="categoryPostsSubmenu">
+            <li>
+              <a href="../../category-posts/create"><i class="fa  fa-ellipsis-h "></i><span>Cadastrar Categorias</span></a>
+            </li>
+            <li>
+                <a href="../../category-posts"><i class="fa  fa-ellipsis-h "></i><span>Lista de Categorias</span></a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="list-group-item">
+          <a href="#pages" data-toggle="collapse">
+            <i class="fa fa-angle-down mr-1"></i>
+            <i class="fa fa fa-link mr-1"></i>
+            Páginas
+          </a>
+
+          <ul class="collapse list-unstyled" data-parent="#sidebar-wrapper" id="pages">
+            <li>
+              <a href="../../../home?#home"><i class="fa  fa-ellipsis-h "></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href="../../../home?#about"><i class="fa  fa-ellipsis-h "></i><span>Sobre</span></a>
+            </li>
+            <li>
+              <a href="../../../home?#services"><i class="fa  fa-ellipsis-h "></i><span>Serviços</span></a>
+            </li>
+            <li>
+              <a href="../../../home?#portfolios"><i class="fa  fa-ellipsis-h "></i><span>Portfólios</span></a>
+            </li>
+            <li>
+              <a href="../../../home?#clients"><i class="fa  fa-ellipsis-h "></i><span>Clientes</span></a>
+            </li>
+            <li>
+                <a href="../../../blog"><i class="fa  fa-ellipsis-h "></i><span>Blog</span></a>
+            </li>
+            <li>
+              <a href="../../../home?#contacts"><i class="fa  fa-ellipsis-h "></i><span>Contactos</span></a>
+            </li>
+
+          </ul>
+
+        </li>
+        
+        <li class="list-group-item">
+          <a href="../../post-office-box">
+            <i class="fa fa-envelope ml-3 mr-1"></i>
+            Caixa postal
+          </a>
+
+        </li>
+
+        <li class="list-group-item">
+          <a  href="../../notifications">
+            <i class="fa fa-bell-o ml-3 mr-1"></i>
+            Notificações
+          </a>
+
+        </li>
+
+        <li class="list-group-item">
+          <a href="../../counters">
+            <i class="fa fa-calendar-plus-o ml-3 mr-1"></i>
+            Counters
+          </a>
+
+        </li>
+
+        
+        <li class="list-group-item">
+          <a class="blue-text" href='../../profile/{function="getUserId()"}'>
+            <i class="fa fa-user ml-3 mr-1"></i>
+            Perfil
+          </a>
+
+        </li>
+
+        <li class="list-group-item">
+          <a href="../../logout">
+            <i class="fa fa-power-off ml-3 mr-1"></i>
+            Sair
+          </a>
+
+        </li>
+        
+
+      </ul>
+    </aside>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg  navbar-default">
+
+        <a href="#"  class="ml-2" id="menu-toggle"><i class="fa fa-bars"></i></a>
+
+
+        <div id="navbar-content">
+          <ul class="menu-container nav ml-auto mt-2 mt-lg-0">
+
+            <li class="nav-item dropdown message">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                <span class="icons"><i class="fa fa-envelope-o"></i></span>
+                <span class="badge bg-danger">{$totalcontacts}</span>
+              </a>
+
+              <ul class="dropdown-menu dropdown-message dropdown-menu-right wow flipInX">
+                  <li class="header border-bottom"><span>Você tem {$totalcontacts} mensagens</span></li>
+
+                  <li class="body dropdown-backdrop">
+                   
+                    <ul class="menu">
+                      {loop="$contacts2"}
+                      <li>
+                        <a href="../../post-office-box">
+                          <span class="pull-left photo"><img alt="avatar" src="../../../res/site/images/profile/user.jpg"></span>
+                          <span class="subject">
+                            <span class="from">{function="limitText(utf8_encode($value.desperson), $limit=35)"}</span>
+                            <span class="time">{$value.desdate}</span>
+                          </span>
+                          <span class="message">
+                            {function="limitText(utf8_encode($value.desmessages), $limit=35)"}
+                          </span>
+                        </a>
+                      </li>
+                      {/loop}
+                    </ul>
+
+                  </li>
+
+                  <li class="footer border-top"><a href="../../post-office-box">Veja Todas as Mensagens</a></li>
+              </ul>
+          
+            </li>
+
+            <li class="nav-item dropdown message">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                <span class="icons"><i class="fa fa-bell-o"></i></span>
+                <span class="badge bg-warning">{$totalcomments}</span>
+              </a>
+
+              <ul class="dropdown-menu dropdown-message dropdown-menu-right wow flipInX">
+                  <li class="header border-bottom"><span>Você tem {$totalcomments} Notificações</span></li>
+
+                  <li class="body dropdown-backdrop " >
+                   
+                    <ul class="menu">
+                      {loop="$comments"}
+                      <li >
+                        <a href='../../posts/{function="utf8_encode($value.desurl)"}/shows?#comments-area'>
+                          <span class="pull-left photo"><img alt="avatar" src="../../../res/site/images/profile/{$value.photos}"></span>
+                          <span class="subject">
+                            <span class="from">{function="utf8_encode($value.desperson)"}</span>
+                            <!--span class="time">Agora Mesmo</span--->
+                          </span>
+                          <span class="message">
+                            {function="limitText(utf8_encode($value.descomment), $limit=35)"}
+                          </span>
+                        </a>
+                      </li>
+                      {/loop}
+                    </ul>
+
+                  </li>
+
+                  <li class="footer border-top"><a href="../../notifications">Veja Todas as Notificações</a></li>
+              </ul>
+          
+            </li>
+
+            <li id="user" class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                <!--span class="username"><i class="fa fa-caret-down mr-1"></i>Herlander Bento</span-->
+                <span><img src="../{$user.desphotos}" alt=""></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right dropdown-user wow flipInX border">
+                <li class="dropdown-item"><a href='../../profile/{function="getUserId()"}'><i class="fa fa-user"></i> Perfil</a></li>
+                <li class="dropdown-item"><a href="../../../home?#home"><i class="fa fa-ellipsis-h"></i>Home</a></li>
+                <li class="dropdown-item"><a href="../../../home?#about"><i class="fa fa-ellipsis-h"></i>Sobre</a></li>
+                <li class="dropdown-item"><a href="../../../home?#services"><i class="fa fa-ellipsis-h"></i>Serviços</a></li>
+                <li class="dropdown-item"><a href="../../../home?#portfolios"><i class="fa fa-ellipsis-h"></i>Portfólios</a></li>
+                <li class="dropdown-item"><a href="../../../home?#clients"><i class="fa fa-ellipsis-h"></i>Clientes</a></li>
+                <li class="dropdown-item"><a href="../../../blog"><i class="fa fa-ellipsis-h"></i>Blog</a></li>
+                <li class="dropdown-item"><a href="../../../home?#contacts"><i class="fa fa-ellipsis-h"></i>contactos</a></li>     
+                <li class="dropdown-item border-top mt-1"><a href="../../logout"><i class="fa fa-power-off"></i>Sair</a></li>
+              </ul>
+            </li>
+
+
+          </ul>
+        </div>
+        <br>
+      </nav>
+
+
+      <!-- content-wrapper --->
+
+      <div class="content-wrapper">
+
+        <div class="container-fluid">
+
+
+          <div class="row pt-5 pb-3 px-3">
+            <div class="col-lg- col-sm-12">
+              <div class="cards  row  content-header">
+                <div class="content-header-left col-lg-10 col-sm-10">
+                  <span class="title">Bem-vindo à JandyEgi</span>
+                  <span><b>Walaletéc</b> dashboard  <b>app</b></span>
+                </div>
+                <!--div class="content-header-right col-lg-1 col-sm-1 ml-auto">
+                  <div class="dropdown">
+                    <button type="button" class="btn" data-toggle="dropdown">
+                      <i class="fa  fa-th"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <li class="dropdown-item"><a href="#"><i class="fa fa-user mr-2"></i>Perfil</a></li>
+                      <li class="dropdown-item active"><a href="#"><i class="fa fa-dashboard mr-2"></i>Dashboard</a></li>
+                      <li class="dropdown-item"><a href="#"><i class="fa fa-power-off mr-2"></i>Sair</a></li>
+                    </div>
+                  </div>
+                </div-->
+              </div>
+            </div>
+          </div> 
+         
+          <!-- Page content -->
+          <div class="row py-5">
+            <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+              <div class="card card-profile shadow">
+                <div class="row justify-content-center">
+                  <div class="col-lg-3 order-lg-2">
+                    <div class="card-profile-image">
+                      <a href="#">
+                        <img src="../{$user.desphotos}" id="image-preview" style="width: 250px !important; height: 180px !important" class="rounded-circle">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                  <div class="d-flex justify-content-between">
+                    <a href="../../logout" class="btn btn-sm btn-info mr-4">Term. Sessão</a>
+                    <a href="../../post-office-box" class="btn btn-sm btn-default float-right">Mensagens</a>
+                  </div>
+                </div>
+                <div class="card-body pt-0 pt-md-4">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                        <div>
+                          <span class="heading">22</span>
+                          <span class="description">Friends</span>
+                        </div>
+                        <div>
+                          <span class="heading">10</span>
+                          <span class="description">Photos</span>
+                        </div>
+                        <div>
+                          <span class="heading">89</span>
+                          <span class="description">Comments</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <h5>
+                      {$user.desperson}<span class="font-weight-light"></span>
+                    </h5>
+                    <div class="h5 font-weight-300">
+                      <i class="ni location_pin mr-2"></i>{$user.city}, {$user.country}
+                    </div>
+                    <div class="h5 mt-4">
+                      <i class="ni business_briefcase-24 mr-2"></i>{$user.desfunction}  - Walaletéc
+                    </div>
+                    <div>
+                      <i class="ni education_hat mr-2"></i>Universidade de Informática
+                    </div>
+                    <hr class="my-4" />
+                    <p>{$user.aboutme}</p>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8 order-xl-1">
+              <div class="card  shadow">
+                <form action="../../profile/{$user.iduser}/addPhoto" method="post" enctype="multipart/form-data">
+
+                  <div class="card-header bg-white border-0">
+                    <div class="row align-items-center">
+                      <div class="col-4">
+                        <h3 class="mb-0">Minha conta</h3>
+                      </div>
+                      <div class="col-8 text-right">
+                        <button type="submit" class="btn btn-sm btn-primary">Actualizar</button>
+                        <a href="../../profile/{$user.iduser}/change-password" class="btn btn-sm btn-primary">Alterar Senha</a>
+                        <a href="../../profile/{$user.iduser}" class="btn btn-sm btn-primary">Perfil</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                      {if="$error != ''"}
+                        <div class="alert alert-danger  alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        {$error}
+                        </div>
+                      {/if}
+                      {if="$success != ''"}
+                      <div class="alert alert-success alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        {$success}
+                      </div>
+                      {/if}
+                      <h6 class="heading-small text-muted mb-4">Informação de Alterar Senha</h6>
+                      <div class="pl-lg-4">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="file"> Fotos:</label>
+                                <input type="file"  name="desphoto" id="file" data-role="file" data-mode="drop">
+                                <!--div class="images-file">
+                                  <img class="img-responsive" width="200" id="image-preview" src="../{$user.desphotos}">
+                                </div-->
+                              </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      
+                      
+
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+      <footer class="footer">
+        <span>Copyright © 2020 <strong>Walaletéc</strong> & <a href="mailto:herlanderbento19@gmail.com">Herlander Bento</a>. - Solucões Tecnológicas</span>
+      </footer>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- jQuery -->
+  <script src="../../../res/admin/library-HCB/jquery v3.4.1/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../../res/admin/library-HCB/Bootstrap v4.4.1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script src="../../../res/admin/library-HCB/mdb/mdb.js"></script>
+
+  <!-- Popper core JavaScript -->
+  <script src="../../../res/admin/library-HCB/mdb/js/popper.min.js"></script>
+
+  <script src="../../../res/admin/library-HCB/adminHCB/adminHCB.js"></script>
+
+ 
+
+  <script type="text/javascript">
+
+    // Inicializar wow
+    new WOW().init();
+
+    // Menu toggler
+
+    $("#menu-toggle").click(function(e) {
+         e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    // Mostrar Senha
+    function myFunction() {
+
+        var passwordCurrent = document.getElementById("myPasswordCurrent");
+
+        var passwordNew = document.getElementById("myPasswordNew");
+
+        var passwordConfirm = document.getElementById("myPasswordConfirm");
+
+        if (passwordCurrent.type === "password") {
+            passwordCurrent.type = "text";
+        } else {
+            passwordCurrent.type = "password";
+        }
+
+        if (passwordNew.type === "password") {
+            passwordNew.type = "text";
+        } else {
+            passwordNew.type = "password";
+        }
+
+        if (passwordConfirm.type === "password") {
+            passwordConfirm.type = "text";
+        } else {
+            passwordConfirm.type = "password";
+        }
+    }
+
+    // Mostrar Imagens
+
+    document.querySelector('#file').addEventListener('change', function(){
+    
+    var file = new FileReader();
+  
+    file.onload = function() {
+      
+      document.querySelector('#image-preview').src = file.result;
+  
+    }
+
+    file.readAsDataURL(this.files[0]);
+
+    });
+
+</script>
+
+</body>
+
+</html>

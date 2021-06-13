@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="pt-AO">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Herlander Bento">
+
+  <title>JandyEgi - Prestação de serviços.</title>
+
+  <link rel="shortcut icon" href="../res/site/icon/JandyEgi/favicon.png" type="image/x-icon">
+
+  <!-- Bootstrap  CSS -->
+  <link rel="stylesheet" href="../res/admin/library-HCB/Bootstrap v4.4.1/css/bootstrap.min.css">
+
+  <!-- Style  CSS -->
+  <link rel="stylesheet" href="../res/admin/library-HCB/style/style.css">
+
+  <!-- Font-awesome  CSS -->
+  <link rel="stylesheet" href="../res/admin/library-HCB/font-awesome/css/font-awesome.min.css">
+
+  <!-- Animate CSS -->
+  <!--link rel="stylesheet" href="../res/admin/library-HCB/animate/animate.min.css"-->
+
+  <!-- MDB CSS -->
+  <link rel="stylesheet" href="../res/admin/library-HCB/mdb/css/mdb.min.css">
+
+   <!--
+    *
+    * Equipa  : Walalétec - Soluções Tecnológicas
+    * Membros : António Gabriel, Aziel António, Filipe Gomes, Herlander Bento, Kelvín Domingos, Neiri Miúdo,  Paulo Estevão.
+    * Desenvolvido por : Herlander Bento.
+    * Data: 17/12/2019.
+    * Nota: III João 01:11
+    * " Amado, não siga o mal, mas o bem. Quem faz o bem é de Deus;
+    *   mas quem faz o mal não tem visto Deus  ".
+    *
+  -->
+
+
+</head>
+
+<body>
+  
+   <div id="login-banner" style="height: 100vh;">
+
+        <div class="container py-5">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-4 login col-sm-6">
+
+                    <div class="login-heading">
+                        <div class="logo">
+                            <a href="../home">
+                                <img src="../res/site/icon/JandyEgi/logo - Copy.png" alt="">
+                                <span class="logo-text">JandyEgi </span>
+                            </a>
+                        </div>
+                        <div class="title">
+                            <h5>Ola ! Bem-vindo ao forgot </h5>
+                            <span>Digite o e-mail para continuar</span>
+                        </div>
+                    </div>
+                    <div class="body">
+
+                        {if="$error != ''"}
+                        <div class="alert alert-danger alert-dismissible my-2">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            {$error}
+                        </div>
+                        {/if}
+
+                        <form action="forgot" method="POST">
+
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" name="email" required placeholder="Digite o e-mail" >
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-login input-group-text"><i class="fa fa-arrow-right"></i></button>
+                                </div>
+                              </div>
+
+                            <div class="text-center pb-2 pt-3">
+                                <a  class="create py-5" href="#"><span>Digite seu e-mail e receba as instruções para redefinir a sua senha.</span></a> 
+                            </div>
+
+                            <div class="text-center pb-2 ">
+                             <a  class="create py-5" href="../home"><span>Deseja ir ao Home?</span> <b>Home</b></a>
+                             <a  class="create py-5 ml-4" href="login"><b>Login</b></a>
+                            </div>
+                            
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+   </div>
+
+  <!-- /#wrapper -->
+
+  <script src="../res/admin/library-HCB/jquery v3.4.1/jquery.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../res/admin/library-HCB/Bootstrap v4.4.1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script src="../res/admin/library-HCB/mdb/mdb.js"></script>
+
+
+  <!-- Popper core JavaScript -->
+  <script src="../res/admin/library-HCB/mdb/js/popper.min.js"></script>
+
+  <script type="text/javascript">
+
+    // Inicializar wow
+    new WOW().init();
+
+ </script>
+
+</body>
+
+</html>

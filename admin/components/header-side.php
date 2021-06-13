@@ -58,7 +58,7 @@
 
           <ul class="collapse list-unstyled"  data-parent="#sidebar-wrapper" id="clientsSubmenu">
             <li>
-              <a href="2019adminJE/clients/create"><i class="fa  fa-ellipsis-h "></i><span>Cadastrar Eventos</span></a>
+              <a href="events-create.php"><i class="fa  fa-ellipsis-h "></i><span>Cadastrar Eventos</span></a>
             </li>
             <li>
                 <a href="2019adminJE/clients"><i class="fa  fa-ellipsis-h "></i><span>Lista de Eventos</span></a>

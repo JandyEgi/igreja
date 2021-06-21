@@ -118,7 +118,7 @@
                         </div>
                     
                     <div class="body px-3 form-register">
-                        <form action="create" method="POST" enctype="multipart/form-data">
+                        <form action="../admin/events/create" method="POST" enctype="multipart/form-data">
                         
                             <div class="form-group">
                                 <label for="desclient">Nome do Eventos:</label>

@@ -2,15 +2,20 @@
 
 namespace Church\app;
 
-use Church\adapter\RepositoryInterface;
+#use Church\repository\RepositoryInterface;
 
 class DomainService implements UseCaseInterface{
 
     private $repository;
 
-    public function __construct(RepositoryInterface $repositoryInterface)
+    public function __construct($repositoryInterface)
     {
         $this->repository = $repositoryInterface;
+    }
+
+    public function index()
+    {
+        return $this->repository->index();
     }
 
     public function created()

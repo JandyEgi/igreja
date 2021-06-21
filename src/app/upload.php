@@ -4,28 +4,27 @@ namespace Church\app;
 
 class upload{
 
+    public function add_image($file,$location){
 
-    private function verify_dir_create(){
-        $dirUploads = "downimage";
+        if ($file["image"]['error']) {
 
-        if (!is_dir($dirUploads)) {
-           mkdir($dirUploads);
-           return basename($_SERVER['DOCUMENT_ROOT']. DIRECTORY_SEPARATOR . $dirUploads);
-        }
-    }
-
-
-    public function add_image($file){
-
-        if ($file['error']) {
-
-            throw new \Exception("Error: ".$file['error']);		
+            throw new \Exception("Error: ".$file["image"]['error']);		
     
         }
 
-        $PATH = $this->verify_dir_create . $file['name'];
+        $PATH = "admin" 
+        .DIRECTORY_SEPARATOR.
+        "res"
+        .DIRECTORY_SEPARATOR.
+        "site"
+        .DIRECTORY_SEPARATOR.
+        "images"
+        .DIRECTORY_SEPARATOR.
+        "$location"
+        .DIRECTORY_SEPARATOR.
+        $file["image"]['name'];
 
-        if (move_uploaded_file($file["tmp_name"],$PATH)) {
+        if (move_uploaded_file($file["image"]["tmp_name"],$PATH)) {
             return  $PATH;
         }
     }

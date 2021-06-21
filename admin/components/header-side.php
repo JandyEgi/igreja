@@ -61,7 +61,7 @@
               <a href="events-create.php"><i class="fa  fa-ellipsis-h "></i><span>Cadastrar Eventos</span></a>
             </li>
             <li>
-                <a href="2019adminJE/clients"><i class="fa  fa-ellipsis-h "></i><span>Lista de Eventos</span></a>
+                <a href="../admin/events"><i class="fa  fa-ellipsis-h "></i><span>Lista de Eventos</span></a>
             </li>
           </ul>
         </li>

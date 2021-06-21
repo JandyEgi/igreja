@@ -1,6 +1,6 @@
 <?php
 
-namespace Church\entities;
+namespace Church\entity;
 
 
 class Models{
